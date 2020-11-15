@@ -73,7 +73,7 @@ const GlobalStyles = createGlobalStyle`
 
   /* Scrollbar Styles */
   body::-webkit-scrollbar {
-    width: 12px;
+    width: 9px;
   }
   html {
     scrollbar-width: thin;
@@ -85,7 +85,7 @@ const GlobalStyles = createGlobalStyle`
   body::-webkit-scrollbar-thumb {
     background-color: var(--orange) ;
     border-radius: 6px;
-    border: 3px solid var(--white);
+    border: 2px solid var(--white);
   }
 
   hr {
