@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 const StyledMasthead = styled.section`
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 110px);
   position: relative;
   justify-content: center;
   display: flex;

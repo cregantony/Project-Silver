@@ -47,7 +47,7 @@ const Pricing = () => (
     <StyledContainer>
       <StyledCards>
         <h2>
-          One Day Squarespace Websites <br /> $999
+          1 Day Website <br /> $999
         </h2>
         <p>
           My one day website process is designed for those who are interested in working with but are not quite ready
@@ -65,7 +65,7 @@ const Pricing = () => (
       </StyledCards>
       <StyledCards style={{ borderLeft: 'solid 2px var(--orange)' }}>
         <h2>
-          90 Day Marketing Campaigns
+          90 Day Growth Campaign
           <br /> $15K
         </h2>
 

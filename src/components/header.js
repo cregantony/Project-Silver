@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
+import Headroom from 'react-headroom'
 import styled from 'styled-components'
 import logo from '../images/logo.svg'
 
@@ -43,7 +44,7 @@ const StyledHeader = styled.header`
   height: 11rem;
   display: flex;
   justify-content: center;
-  position: fixed;
+  // position: fixed;
   background: white;
 `
 
@@ -55,36 +56,43 @@ const StyledLi = styled.li`
 `
 
 const Header = () => (
-  <StyledHeader>
-    <StyledContainer>
-      <Link to="/">
-        <StyledLogo src={logo} alt="Creg Antony logo" />
-      </Link>
-      <StyledNav>
-        <StyledUL>
-          <StyledLi>
-            <Link to="/">Home</Link>
-          </StyledLi>
-          <StyledLi>
-            <Link to="/case-studies/">Case Studies</Link>
-          </StyledLi>
-          <StyledLi>
-            <Link to="/process/">Process</Link>
-          </StyledLi>
-          <StyledLi>
-            <Link to="/essays/">Essays</Link>
-          </StyledLi>
-          <StyledLi>
-            <Link to="/about/">About</Link>
-          </StyledLi>
-          <StyledLi>
-            <Link to="/contact/">Contact</Link>
-          </StyledLi>
-        </StyledUL>
-      </StyledNav>
-      <StyledBurger type="button">Burger</StyledBurger>
-    </StyledContainer>
-  </StyledHeader>
+  <Headroom
+    style={{
+      background: 'rgb(57, 111, 176)',
+      boxShadow: '10px 1px 1px rgba(0,0,0,0.05)',
+    }}
+  >
+    <StyledHeader>
+      <StyledContainer>
+        <Link to="/">
+          <StyledLogo src={logo} alt="Creg Antony logo" />
+        </Link>
+        <StyledNav>
+          <StyledUL>
+            <StyledLi>
+              <Link to="/">Home</Link>
+            </StyledLi>
+            <StyledLi>
+              <Link to="/case-studies/">Case Studies</Link>
+            </StyledLi>
+            <StyledLi>
+              <Link to="/process/">Process</Link>
+            </StyledLi>
+            <StyledLi>
+              <Link to="/essays/">Essays</Link>
+            </StyledLi>
+            <StyledLi>
+              <Link to="/about/">About</Link>
+            </StyledLi>
+            <StyledLi>
+              <Link to="/contact">Contact</Link>
+            </StyledLi>
+          </StyledUL>
+        </StyledNav>
+        <StyledBurger type="button">Burger</StyledBurger>
+      </StyledContainer>
+    </StyledHeader>
+  </Headroom>
 )
 
 export default Header
