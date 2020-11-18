@@ -13,6 +13,8 @@ import 'normalize.css'
 import Header from './header'
 import './layout.css'
 import GlobalStyles from '../styles/GlobalStyles'
+import Footer from './footer'
+import MobileMenu from './mobilemenu'
 
 const StyledLayout = styled.div`
   margin: 0 auto;
@@ -36,13 +38,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <StyledLayout>
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with Love
-        </footer>
+        <Footer />
       </StyledLayout>
     </>
   )

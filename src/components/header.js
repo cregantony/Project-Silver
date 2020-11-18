@@ -3,6 +3,9 @@ import React from 'react'
 import Headroom from 'react-headroom'
 import styled from 'styled-components'
 import logo from '../images/logo.svg'
+import burger from '../images/hamburger.svg'
+import 'reactjs-popup/dist/index.css'
+import MobileMenu from './mobilemenu'
 
 const StyledLogo = styled.img`
   width: 92px;
@@ -18,10 +21,18 @@ const StyledContainer = styled.div`
   margin-right: auto;
   max-width: calc(110rem + 2 * 3rem);
   width: 100%;
-`
-
-const StyledBurger = styled.div`
-  display: none;
+  button {
+    display: none;
+    border-bottom: none;
+  }
+  @media (max-width: 900px) {
+    button {
+      display: inline-block;
+    }
+    nav {
+      display: none;
+    }
+  } ;
 `
 
 const StyledNav = styled.nav`
@@ -89,7 +100,7 @@ const Header = () => (
             </StyledLi>
           </StyledUL>
         </StyledNav>
-        <StyledBurger type="button">Burger</StyledBurger>
+        <MobileMenu />
       </StyledContainer>
     </StyledHeader>
   </Headroom>

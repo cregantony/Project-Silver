@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
 import SEO from '../components/seo'
 import LeadMagnet from '../components/leadmagnet'
 import CaseStudy from '../components/homecasestudysection'
@@ -25,8 +23,6 @@ const IndexPage = () => (
     <Testimonial />
 
     <BlogSummary />
-
-    <Consultation />
   </>
 )
 
