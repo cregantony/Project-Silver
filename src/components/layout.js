@@ -14,7 +14,6 @@ import Header from './header'
 import './layout.css'
 import GlobalStyles from '../styles/GlobalStyles'
 import Footer from './footer'
-import MobileMenu from './mobilemenu'
 
 const StyledLayout = styled.div`
   margin: 0 auto;

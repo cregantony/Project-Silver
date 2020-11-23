@@ -35,6 +35,7 @@ const StyledUL = styled.ul`
   align-items: center;
   list-style-type: none;
   justify-content: space-evenly;
+  padding: 0;
 `
 const StyledLi = styled.li`
   position: relative;

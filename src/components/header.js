@@ -3,7 +3,6 @@ import React from 'react'
 import Headroom from 'react-headroom'
 import styled from 'styled-components'
 import logo from '../images/logo.svg'
-import burger from '../images/hamburger.svg'
 import 'reactjs-popup/dist/index.css'
 import MobileMenu from './mobilemenu'
 

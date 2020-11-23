@@ -34,7 +34,9 @@ const Footer = () => (
         <div>
           <StyledLinks>
             <li>
-              <h3>Explore</h3>
+              <Link to="/home">
+                <h3>Explore</h3>
+              </Link>
             </li>
             <li>
               <p>Home</p>
